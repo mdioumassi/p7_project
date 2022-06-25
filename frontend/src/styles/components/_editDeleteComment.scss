@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    &__edit-img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.edit-comment {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    &__form {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        input:first-child {
+            border: 1px solid $color-main;
+            padding: 6px;
+            border-radius: 2px;
+            margin-bottom: 10px;
+        }
+        input:first-child:focus {
+            outline: none;
+        }
+        .edit-button {
+            font-family: $font-title;
+            padding: 6px;
+            background-color: $color-main;
+            color: #FFF;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 10px;
+        }
+        &__deleteImg {
+            width: 20px;
+            height: 20px;
+            align-self: flex-end;
+        }
+    }
+}

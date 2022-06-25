@@ -1,0 +1,64 @@
+.comments-container {
+    margin-top: 10px;
+    .comment {
+        border-radius: 10px;
+        border: 1px solid $color-main;
+        padding: 20px;
+        margin-bottom: 10px;
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            .info-commenter {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 10px;
+                }
+                p {
+                    font-family: $font-title;
+                }
+            }
+            .comment-date {
+                font-style: italic;
+            }
+        }
+        .message {
+            margin-bottom: 10px;
+        }
+    }
+    .comment-form {
+        display: flex;
+        flex-direction: column;
+        input:first-child {
+            border: 1px solid $color-main;
+            padding: 6px;
+            border-radius: 2px;
+            margin-bottom: 10px;
+        }
+        input:first-child:focus {
+            outline: none;
+        }
+        input:last-child {
+            font-family: $font-title;
+            padding: 6px;
+            background-color: $color-main;
+            color: #FFF;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+        }
+    }
+}
+
+.by-user {
+    background-color: $color-tertiary;
+    border: none !important;
+}
